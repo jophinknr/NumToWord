@@ -1,6 +1,25 @@
 # NumToWord
 Ruby - Code Challenge for icicletech
 
+Ruby version:
+EAD+jjoseph56@IN5CG5133CMN MINGW64 ~/Desktop/test
+$ ruby --version
+ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
+
+Steps for run:
+1. Keep dictionary.txt, and mobNumToWord.rb file on same folder.
+2. Verify Ruby installed and env_path/System veriable configured properly.
+3. open Git Bash or Dos prompt, and run 'ruby mobNumToWord.rb' for execute the script.
+
+Test Result:
+$ ruby mobNumToWord.rb
+
+Time taken for process: 714.041 milliseconds
+[["noun", "struck"], ["onto", "struck"], ["motor", "truck"], ["motor", "usual"], ["nouns", "truck"], ["nouns", "usual"], "motortruck"]
+Time taken for process: 682.039 milliseconds
+[["act", "amounts"], ["act", "contour"], ["bat", "amounts"], ["bat", "contour"], ["cat", "amounts"], ["cat", "contour"], ["acta", "mounts"], "catamounts"]
+
+
 assignment:
 
 Given a 10 digit phone number, you must return all possible words or combination of words from the provided dictionary, that can be mapped back as a whole to the number.
