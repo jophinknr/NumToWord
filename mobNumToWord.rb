@@ -14,11 +14,13 @@ class Number2Word
     end
 
     #################
+    #Collect words along with number of letters
     file_path = "dictionary.txt"
     File.foreach( file_path ) do |word|
       dictionary[word.length] << word.chop.to_s.downcase
     end
     ###################
+    #Get combination of letters
     keys = nums.chars.map{|num|letters[num]}
     # print keys
 
@@ -27,6 +29,7 @@ class Number2Word
     # puts total_number
 
     #################################
+    #create a set of arrays with maximum possible word combinations
     for i in (2..total_number - 2)
       first_array = keys[0..i]
       # print first_array
@@ -66,6 +69,6 @@ class Number2Word
 
 
 end
-6686787825
+#Unit test
 print Number2Word.new().words_dicts("6686787825")
 print Number2Word.new().words_dicts("2282668687")
